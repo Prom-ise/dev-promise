@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "scale",
+          "-webkit-text-size-adjust",
+          "user-select"
+        ]
+      }
+    ],
+    "css-prefix-order": "off"
+  }
+}

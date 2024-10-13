@@ -3,6 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { CiMenuKebab } from "react-icons/ci";
+// import { SiHomebridge } from "react-icons/si";
+import { IoDiamond } from "react-icons/io5";
+import { TbCoinRupee } from "react-icons/tb";
+import { TbBrandCashapp } from "react-icons/tb";
+import { FaUser } from "react-icons/fa";
+import { IconContext } from "react-icons";
 import {
   Menubar,
   MenubarContent,
@@ -87,7 +93,7 @@ export const Navbar = ({ currentTrophy, unlockAchievement, showLastNotification 
     unlockAchievement("changedTheme");
   };
   const handleLinkClick = (index) => {
-    setIndicatorLeft(index * 80 + 40);
+    setIndicatorLeft(index * 95 + 45);
   };
   useEffect(() => {
     AOS.init({duration: 1500});
@@ -95,7 +101,7 @@ export const Navbar = ({ currentTrophy, unlockAchievement, showLastNotification 
       (link) => link.classList.contains("link-item")
     );
     if (activeIndex !== -1) {
-      setIndicatorLeft(activeIndex * 80 + 40);
+      setIndicatorLeft(activeIndex * 95 + 40);
     };
   }, []);
 
@@ -287,6 +293,62 @@ export const Navbar = ({ currentTrophy, unlockAchievement, showLastNotification 
       ></span>
     </ul>
         </nav>
+        {/* <div className="nav py-1 fixed bottom-0 bg-light rounded-5 pt-2 m-3 px-1">
+        <div className="footered">
+          <div className="centered-div">
+          <NavLink
+          className={({ isActive }) => (isActive ? "link-item" : "linked-item")}
+          to="/Dev_Promise"
+          ref={(el) => (navLinksRef.current[0] = el)}
+          onClick={() => handleLinkClick(0)}
+        >
+          <SiHomebridge className="links-icon" />
+          <span className="link-text">Home</span>
+        </NavLink>
+          </div>
+        </div>
+
+        <div className="footered">
+          <div className="centered-div">
+          <NavLink
+          className={({ isActive }) => (isActive ? "link-item" : "linked-item")}
+          to="/about"
+          ref={(el) => (navLinksRef.current[1] = el)}
+          onClick={() => handleLinkClick(1)}
+        >
+          <FaUserAlt className="links-icon" />
+          <span className="link-text">About</span>
+        </NavLink>
+        </div>
+        </div>
+
+        <div className="footered">
+          <div className="centered-div"><NavLink
+          className={({ isActive }) => (isActive ? "link-item" : "linked-item")}
+          to="/projects"
+          ref={(el) => (navLinksRef.current[2] = el)}
+          onClick={() => handleLinkClick(2)}
+        >
+          <GrProjects className="links-icon" />
+          <span className="link-text">Projects</span>
+        </NavLink>
+        </div>
+        </div>
+
+        <div className="footered">
+          <div className="centered-div">
+          <NavLink
+          className={({ isActive }) => (isActive ? "link-item" : "linked-item")}
+          to="/contact"
+          ref={(el) => (navLinksRef.current[3] = el)}
+          onClick={() => handleLinkClick(3)}
+        >
+          <AiFillMessage className="links-icon" />
+          <span className="link-text">Contact</span>
+        </NavLink>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import './Typewriter.css';
 
 const Typewriter = ({ texts, typingSpeed, deletingSpeed, pauseTime }) => {
-  const [currentText, setCurrentText] = useState('');
+  const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loop, setLoop] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -13,8 +13,8 @@ const Typewriter = ({ texts, typingSpeed, deletingSpeed, pauseTime }) => {
       const fullText = texts[currentIndex];
 
       setCurrentText(
-        isDeleting 
-          ? fullText.substring(0, charIndex - 1) 
+        isDeleting
+          ? fullText.substring(0, charIndex - 1)
           : fullText.substring(0, charIndex + 1)
       );
       setCharIndex(charIndex + (isDeleting ? -1 : 1));
@@ -27,12 +27,28 @@ const Typewriter = ({ texts, typingSpeed, deletingSpeed, pauseTime }) => {
       }
     };
 
-    const timer = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    const timer = setTimeout(
+      handleTyping,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
 
     return () => clearTimeout(timer);
-  }, [charIndex, isDeleting, loop, texts, typingSpeed, deletingSpeed, pauseTime]);
+  }, [
+    charIndex,
+    isDeleting,
+    loop,
+    texts,
+    typingSpeed,
+    deletingSpeed,
+    pauseTime,
+  ]);
 
-  return <span className="typewriter" dangerouslySetInnerHTML={{ __html: currentText }}></span>;
+  return (
+    <span
+      className="typewriter"
+      dangerouslySetInnerHTML={{ __html: currentText }}
+    ></span>
+  );
 };
 
 export default Typewriter;

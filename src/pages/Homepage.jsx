@@ -248,35 +248,35 @@ const Homepage = () => {
             </div>
           </div>
           <div className="more-info">
-              <div className="exp-info">
-                <div className="num" data-aos="zoom-in" data-aos-delay="1000">
-                  3<span>+</span>
-                </div>
-                <div className="exp">
-                  <div className="xp1">Years</div>
-                  <div className="xp2">of Experience</div>
-                </div>
+            <div className="exp-info">
+              <div className="num" data-aos="zoom-in" data-aos-delay="1000">
+                3<span>+</span>
               </div>
-              <div className="project-info">
-                <div
-                  className="num2 ms-1"
-                  data-aos="zoom-in"
-                  data-aos-delay="1000"
-                >
-                  {repoCount}
-                  <span>+</span>
-                </div>
-                <div className="exp mt-9 ms-2">Projects/Contributions</div>
+              <div className="exp">
+                <div className="xp1">Years</div>
+                <div className="xp2">of Experience</div>
               </div>
-            </div> 
-            <div className="nextPageText text-center">
-              "You've made it this far! Curious to know more about my journey?{" "}
-              <span className="text-[var(--mainColor)] underline hover:text-[var(--shadowColor7)] cursor-pointer">
-                <NavLink to="/about">Click here</NavLink>
-              </span>{" "}
-              to discover more about me!"
             </div>
-            {/* <hr className="mx-auto line-through mt-5" data-aos="fade-up" /> */}
+            <div className="project-info">
+              <div
+                className="num2 ms-1"
+                data-aos="zoom-in"
+                data-aos-delay="1000"
+              >
+                {repoCount}
+                <span>+</span>
+              </div>
+              <div className="exp mt-9 ms-2">Projects/Contributions</div>
+            </div>
+          </div>
+          <div className="nextPageText text-center">
+            "You've made it this far! Curious to know more about my journey?{" "}
+            <span className="text-[var(--mainColor)] underline hover:text-[var(--shadowColor7)] cursor-pointer">
+              <NavLink to="/about">Click here</NavLink>
+            </span>{" "}
+            to discover more about me!"
+          </div>
+          {/* <hr className="mx-auto line-through mt-5" data-aos="fade-up" /> */}
         </div>
       </div>
     </div>

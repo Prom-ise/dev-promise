@@ -7,14 +7,16 @@ export const Footer = () => {
     <>
       <footer className="footer">
         <div>
-          Designed and Developed by <b style={{color: 'var(--mainColor)'}}>Promise Aina</b>
+          Designed and Developed by{" "}
+          <b style={{ color: "var(--mainColor)" }}>Promise Aina</b>
         </div>
         <div>Copyright © 2024 Dev_Promise. All right reserved.</div>
         <div className="footer-links">
           <div className="icon-content">
             <a
               href="https://www.x.com/Dev_Pr0mise"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="twitter"
               data-social="twitter"
             >
@@ -27,7 +29,8 @@ export const Footer = () => {
           <div className="icon-content">
             <a
               href="https://www.linkedin.com/in/devpromise"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               data-social="linkedin"
             >
@@ -40,7 +43,8 @@ export const Footer = () => {
           <div className="icon-content">
             <a
               href="https://github.com/Prom-ise"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="github"
               data-social="github"
             >
@@ -51,11 +55,13 @@ export const Footer = () => {
           </div>
 
           <div className="icon-content">
-          <a
+            <a
               href="https://www.instagram.com/promise.emmanuel.35110418?igsh=dXo4bWFjaHpvbjh5"
               target="_blank"
               rel="noopener noreferrer"
-             aria-label="instagram" data-social="instagram">
+              aria-label="instagram"
+              data-social="instagram"
+            >
               <div className="filled"></div>
               <FaInstagram className="instagram" />
             </a>

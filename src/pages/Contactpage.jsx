@@ -41,10 +41,10 @@ const Contactpage = ({ unlockAchievement }) => {
       return;
     }
   
-    setError(''); // Clear any previous errors
+    setError('');
   
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://devpromise-backfolio.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

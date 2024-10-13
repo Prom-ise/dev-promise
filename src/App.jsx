@@ -140,7 +140,7 @@ function App() {
     if (unlockedCount === 5) newTrophy = "diamond";
     setCurrentTrophy(newTrophy);
     localStorage.setItem("currentTrophy", newTrophy);
-    return newTrophy; // Return the new trophy for use in notifications
+    return newTrophy;
   };
 
   // Map of trophy images

@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .small-nav {
   position: fixed;
@@ -2158,6 +2158,7 @@ strong {
 /* ----------------PROJECT PAGE---------------- */
 .projects {
   margin: 2em 1.3em 3em 1.3em;
+  overflow: hidden !important;
 }
 .project {
   background-color: var(--tintcolor3);
@@ -2212,6 +2213,7 @@ strong {
   opacity: 0;
   height: 100%;
   transition: opacity 1s ease-in-out;
+  overflow: hidden;
 }
 .project-carousel.active {
   opacity: 1;

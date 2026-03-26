@@ -106,7 +106,7 @@ const Contactpage = ({ unlockAchievement }) => {
             <div className="cont-icon">
               <IoMdMail />
             </div>
-            <div className="cont-text">emmanuelpromise456@gmail.com</div>
+            <div className="cont-text">ainapromise0@gmail.com</div>
           </div>
           <div
             className="contect-info mb-[1em]"
@@ -120,7 +120,7 @@ const Contactpage = ({ unlockAchievement }) => {
           </div>
           <div className="getintouch-links">
             <a
-              href="https://www.linkedin.com/in/devpromise"
+              href="https://www.linkedin.com/Prom-ise"
               target="_blank"
               rel="noopener noreferrer"
             >
